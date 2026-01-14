@@ -4,87 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistemas de Información | Landing Page</title>
-    <style>
-        /* ESTILOS TECNOLÓGICOS (CSS) */
-        body {
-            background-color: #0f172a;
-            color: #e2e8f0;
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #1e293b;
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom: 3px solid #38bdf8;
-        }
-        nav {
-            margin-top: 20px;
-        }
-        nav a {
-            color: #38bdf8;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-        section {
-            background: #1e293b;
-            margin-bottom: 30px;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-        }
-        .content-flex {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        .text-side {
-            flex: 1;
-            min-width: 300px;
-        }
-        .img-side img {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 8px;
-            border: 2px solid #38bdf8;
-            display: block;
-        }
-        h2 {
-            color: #38bdf8;
-            font-size: 1.8rem;
-            margin-top: 0;
-        }
-        .contacto-box {
-            background-color: #38bdf8;
-            color: #0f172a;
-            padding: 20px;
-            border-radius: 8px;
-            font-weight: bold;
-        }
-        footer {
-            text-align: center;
-            padding: 40px;
-            color: #94a3b8;
-            font-size: 0.9rem;
-            border-top: 1px solid #334155;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <header id="principal-header">
         <h1>Ingeniería en Sistemas de Información</h1>
         <p>Soluciones Digitales, Análisis y Seguridad de Datos</p>
         <nav>
@@ -99,49 +23,41 @@
             <div class="content-flex">
                 <div class="text-side">
                     <h2>Análisis de Sistemas</h2>
-                    <p>El análisis de sistemas permite identificar las necesidades tecnológicas de una organización. Nos enfocamos en la optimización de procesos, levantamiento de requerimientos y diseño de arquitecturas de software robustas.</p>
+                    <p>Optimización de procesos y diseño de arquitecturas robustas.</p>
                     <ul>
                         <li>Modelado de Datos.</li>
-                        <li>Optimización de Flujos de Trabajo.</li>
-                        <li>Gestión de Ciclo de Vida del Software (SDLC).</li>
+                        <li>Gestión de Ciclo de Vida (SDLC).</li>
                     </ul>
                 </div>
                 <div class="img-side">
-                    <img src="img/analisis.jpg" alt="Gráficos de Análisis de Sistemas">
+                    <img src="img/analisis.jpg" alt="Análisis">
                 </div>
             </div>
         </section>
 
         <section id="seguridad">
-            <div class="content-flex" style="flex-direction: row-reverse;">
+            <div class="content-flex">
                 <div class="text-side">
                     <h2>Ciberseguridad</h2>
-                    <p>Protegemos la integridad, confidencialidad y disponibilidad de la información. Implementamos protocolos avanzados para mitigar riesgos y ataques cibernéticos en infraestructuras críticas.</p>
-                    <article>
-                        <h3>Nuestras Áreas:</h3>
-                        <p>Auditoría de redes, cifrado de datos y gestión de vulnerabilidades.</p>
-                    </article>
+                    <p>Protección de infraestructuras críticas y gestión de vulnerabilidades.</p>
                 </div>
                 <div class="img-side">
-                    <img src="img/seguridad.jpg" alt="Seguridad Digital">
+                    <img src="img/seguridad.jpg" alt="Seguridad">
                 </div>
             </div>
         </section>
 
         <section id="contacto">
-            <h2>Información de Contacto</h2>
+            <h2>Contacto</h2>
             <div class="contacto-box">
                 <p>📍 Ubicación: Quito-Ecuador</p>
-                <p>📧 Correo Institucional: gsarangor@uteq.edu.ec
-</p>
-                <p>💻 Soporte Técnico: Disponible 24/7 para incidencias de red.</p>
+                <p>📧 Correo: gsarangor@uteq.edu.ec</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Tarea de Fundamentos de HTML5</p>
-        <p>Desarrollado por: <strong> Daniel Sarango </strong></p>
+        <p>Desarrollado por: <strong>Daniel Sarango</strong></p>
     </footer>
 
 </body>
