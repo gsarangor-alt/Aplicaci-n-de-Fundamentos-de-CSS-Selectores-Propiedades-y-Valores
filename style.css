@@ -1,1 +1,95 @@
+/* ================= GLOBAL ================= */
+/* Selector de etiqueta y Box Model */
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0; /* Box model */
+    padding: 0; /* Box model */
+    line-height: 1.6;
+}
 
+/* Propiedades de caja obligatorias */
+section {
+    width: 90%; 
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #334155;
+}
+
+/* ================= HEADER ================= */
+/* Selector de ID obligatorio */
+#principal-header {
+    background-color: #1e293b;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 3px solid #38bdf8;
+}
+
+/* ================= NAV ================= */
+nav {
+    display: flex; /* Propiedad de diseño */
+    justify-content: center;
+    gap: 20px; /* Propiedad opcional */
+    margin-top: 20px;
+}
+
+/* Selector Combinado: Descendiente (nav a) */
+nav a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Pseudo-clases obligatorias: hover y active */
+nav a:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: #ffffff;
+}
+
+/* ================= MAIN ================= */
+/* Selector Combinado: Hijos (main > section) */
+main > section {
+    background: #1e293b;
+    border-radius: 12px; /* Propiedad decorativa */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4); /* Opcional */
+}
+
+/* Pseudo-clase: first-child */
+section:first-child h2 {
+    color: #ffffff;
+}
+
+/* Estilo para la imagen obligatoria */
+.img-side img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    border: 2px solid #38bdf8;
+    display: block;
+}
+
+/* Pseudo-elementos obligatorios: before */
+h2::before {
+    content: "⚡ ";
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #94a3b8;
+    border-top: 1px solid #334155;
+}
+
+/* Pseudo-elemento obligatorio: after */
+footer p::after {
+    content: " | 2026";
+    font-weight: bold;
+}
