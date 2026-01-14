@@ -1,95 +1,64 @@
-/* ================= GLOBAL ================= */
-/* Selector de etiqueta y Box Model */
-body {
-    background-color: #0f172a;
-    color: #e2e8f0;
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0; /* Box model */
-    padding: 0; /* Box model */
-    line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de Información | Tarea CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Propiedades de caja obligatorias */
-section {
-    width: 90%; 
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 30px;
-    border: 1px solid #334155;
-}
+    <header id="principal-header">
+        <h1>Ingeniería en Sistemas de Información</h1>
+        <p>Soluciones Digitales, Análisis y Seguridad de Datos</p>
+        <nav>
+            <a href="#analisis">Análisis</a>
+            <a href="#seguridad">Ciberseguridad</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
 
-/* ================= HEADER ================= */
-/* Selector de ID obligatorio */
-#principal-header {
-    background-color: #1e293b;
-    padding: 40px 20px;
-    text-align: center;
-    border-bottom: 3px solid #38bdf8;
-}
+    <main>
+        <section id="analisis">
+            <div class="content-flex">
+                <div class="text-side">
+                    <h2>Análisis de Sistemas</h2>
+                    <p>Optimización de procesos y diseño de arquitecturas robustas.</p>
+                    <ul>
+                        <li>Modelado de Datos.</li>
+                        <li>Gestión de Ciclo de Vida (SDLC).</li>
+                    </ul>
+                </div>
+                <div class="img-side">
+                    <img src="img/analisis.jpg" alt="Análisis de Sistemas">
+                </div>
+            </div>
+        </section>
 
-/* ================= NAV ================= */
-nav {
-    display: flex; /* Propiedad de diseño */
-    justify-content: center;
-    gap: 20px; /* Propiedad opcional */
-    margin-top: 20px;
-}
+        <section id="seguridad">
+            <div class="content-flex">
+                <div class="text-side">
+                    <h2>Ciberseguridad</h2>
+                    <p>Protección de infraestructuras críticas y gestión de vulnerabilidades.</p>
+                </div>
+                <div class="img-side">
+                    <img src="img/seguridad.jpg" alt="Ciberseguridad">
+                </div>
+            </div>
+        </section>
 
-/* Selector Combinado: Descendiente (nav a) */
-nav a {
-    color: #38bdf8;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="contacto-box">
+                <p>📍 Ubicación: Quito-Ecuador</p>
+                <p>📧 Correo: gsarangor@uteq.edu.ec</p>
+            </div>
+        </section>
+    </main>
 
-/* Pseudo-clases obligatorias: hover y active */
-nav a:hover {
-    color: #7dd3fc;
-    text-decoration: underline;
-}
+    <footer>
+        <p>Desarrollado por: <strong>Daniel Sarango</strong></p>
+    </footer>
 
-nav a:active {
-    color: #ffffff;
-}
-
-/* ================= MAIN ================= */
-/* Selector Combinado: Hijos (main > section) */
-main > section {
-    background: #1e293b;
-    border-radius: 12px; /* Propiedad decorativa */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.4); /* Opcional */
-}
-
-/* Pseudo-clase: first-child */
-section:first-child h2 {
-    color: #ffffff;
-}
-
-/* Estilo para la imagen obligatoria */
-.img-side img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-    border: 2px solid #38bdf8;
-    display: block;
-}
-
-/* Pseudo-elementos obligatorios: before */
-h2::before {
-    content: "⚡ ";
-}
-
-/* ================= FOOTER ================= */
-footer {
-    text-align: center;
-    padding: 40px;
-    color: #94a3b8;
-    border-top: 1px solid #334155;
-}
-
-/* Pseudo-elemento obligatorio: after */
-footer p::after {
-    content: " | 2026";
-    font-weight: bold;
-}
+</body>
+</html>
